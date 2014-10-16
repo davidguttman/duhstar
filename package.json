@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Easily see what's taking up disk space, i.e. sorted `du -hs *`.",
   "main": "index.js",
-  "scripts": {},
+  "bin": "./index.js",
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
   "dependencies": {

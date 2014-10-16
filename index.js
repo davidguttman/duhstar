@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var _ = require('underscore')
 var exec = require('child_process').exec
 
