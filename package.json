@@ -1,0 +1,12 @@
+{
+  "name": "duhstar",
+  "version": "0.0.0",
+  "description": "Easily see what's taking up disk space, i.e. sorted `du -hs *`.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.7.0"
+  }
+}
