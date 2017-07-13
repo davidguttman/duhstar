@@ -29,7 +29,8 @@ $ duhstar
 ## Usage & Installation
 
 ```
-$ npx duhstar [/some/path]```
+$ npx duhstar [/some/path]
+```
 
 If you don't have a recent version of npm (> 5.2.0), install first:
 
