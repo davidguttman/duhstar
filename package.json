@@ -1,6 +1,6 @@
 {
   "name": "duhstar",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Easily see what's taking up disk space, i.e. sorted `du -hs *`.",
   "main": "index.js",
   "bin": {
