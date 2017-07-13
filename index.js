@@ -1,19 +1,15 @@
 #!/usr/bin/env node
 
-var _ = require('underscore')
+var path = require('path')
 var exec = require('child_process').exec
+var sortBy = require('lodash.sortby')
 
-var dir = process.argv[2]
-
-if (dir) {
-  var cmd = 'du -hs ' + dir + '/*'
-} else {
-  var cmd = 'du -hs *'
-}
+var dir = process.argv[2] || './'
+var cmd = 'du -hs ' + path.join(dir, '*')
 
 var child = exec(cmd, function(err, stdout, stderr) {
   var lines = stdout.split('\n')
-  var sorted = _.sortBy(lines, function(line) {
+  var sorted = sortBy(lines, function(line) {
     var match = line.match(/^\s?(\d+\.?\d?\w)/)
     var val = match && match[1]
     if (!val) return 0
